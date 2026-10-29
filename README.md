@@ -6,7 +6,7 @@ The important fix: **GitHub Pages cannot automatically list files inside your `s
 
 1. Extract this ZIP.
 2. Put your audio files (`.mp3`, `.m4a`, `.ogg`, `.wav`, `.aac`, or `.flac`) in the `songs` folder.
-3. Optional: put each cover image in `thumbnails`. For example, `my-song.mp3` can use `my-song.jpg` or `my-song.png`.
+3. Optional: put each cover image in `thumbnails`. For example, `my-song.mp3` can use `my-song.jpg` or `my-song.png`. The generator now matches filenames while ignoring punctuation/spacing differences. If a track still has no cover image, it automatically creates a unique NAKRI × OG branded SVG thumbnail using the song title.
 4. Open Command Prompt in the website folder. In File Explorer, open the folder, click the address bar, type `cmd`, and press Enter.
 5. Run:
 
@@ -18,6 +18,10 @@ The important fix: **GitHub Pages cannot automatically list files inside your `s
 6. Check that `songs.json` now lists your tracks.
 7. Upload/commit **index.html, style.css, app.js, songs.json, songs/, and thumbnails/** to the same GitHub repository folder. Keep `index.html` and `songs.json` beside each other at the published site root.
 8. Wait for GitHub Pages to redeploy, then hard-refresh the site with **Ctrl + F5**.
+
+## Thumbnail fix
+
+Every song listed in `songs.json` now has a thumbnail path. The supplied cover images are matched more flexibly, and `build_songs.py` automatically creates a branded cover for any future song that has no matching image. For a song's own artwork, add an image with the same filename stem in `thumbnails`; then run `py build_songs.py` again.
 
 ## Important checks
 
