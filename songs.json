@@ -49,6 +49,13 @@
     "duration": "MP3"
   },
   {
+    "title": "Tena Khimphun – Tena   Room6 (បន្ទប់លេខ៦)",
+    "artist": "NAKRI x OG",
+    "file": "songs/Tena%20Khimphun%20%E2%80%93%20Tena%20-%20Room6%20%28%E1%9E%94%E1%9E%93%E1%9F%92%E1%9E%91%E1%9E%94%E1%9F%8B%E1%9E%9B%E1%9F%81%E1%9E%81%E1%9F%A6%29.mp3",
+    "cover": "thumbnails/Tena%20Khimphun%20%E2%80%93%20Tena%20-%20Room6%20%28%E1%9E%94%E1%9E%93%E1%9F%92%E1%9E%91%E1%9E%94%E1%9F%8B%E1%9E%9B%E1%9F%81%E1%9E%81%E1%9F%A6%29.jpg",
+    "duration": "MP3"
+  },
+  {
     "title": "Tena Khimphun – Tena   កុំស្រលាញ់បងអី Re produce",
     "artist": "NAKRI x OG",
     "file": "songs/Tena%20Khimphun%20%E2%80%93%20Tena%20-%20%E1%9E%80%E1%9E%BB%E1%9F%86%E1%9E%9F%E1%9F%92%E1%9E%9A%E1%9E%9B%E1%9E%B6%E1%9E%89%E1%9F%8B%E1%9E%94%E1%9E%84%E1%9E%A2%E1%9E%B8%20Re-produce.mp3",
@@ -81,6 +88,13 @@
     "artist": "NAKRI x OG",
     "file": "songs/Tena%20Khimphun%2C%20Tep%20Piseth%20%E2%80%93%20Tena%20-%20Broken%20Toy%20ft%20Tep%20Piseth%20Remix.mp3",
     "cover": "thumbnails/Tena%20Khimphun%2C%20Tep%20Piseth%20%E2%80%93%20Tena%20-%20Broken%20Toy%20ft%20Tep%20Piseth%20Remix.jpg",
+    "duration": "MP3"
+  },
+  {
+    "title": "Tena Khimphun 24 7",
+    "artist": "NAKRI x OG",
+    "file": "songs/Tena%20Khimphun-24-7.mp3",
+    "cover": "thumbnails/Tena%20Khimphun-24-7.jpg",
     "duration": "MP3"
   }
 ]
