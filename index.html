@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090912">
+  <title>NAKRI x OG — Music</title>
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="apple-touch-icon" href="assets/logo.png">
+  <meta name="description" content="Listen to music from NAKRI x OG.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="NAKRI x OG home"><img class="brand-logo" src="assets/logo.png" alt="NAKRI x OG logo"><span class="brand-name">NAKRI <i>x</i> OG<small>YOUR MUSIC. YOUR VIPE.</small></span></a>
+    <div class="top-actions"><span class="live-dot"></span><span>Online For Listening</span></div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span></span> INDEPENDENT MUSIC SPACE</div>
+        <h1>Feel the sound.<br><em>Live the moment.</em></h1>
+        <p>Your place to discover and listen to the latest tracks from NAKRI x OG.</p>
+        <a class="hero-button" href="#library">EXPLORE THE MUSIC <span>↘</span></a>
+      </div>
+      <div class="hero-art">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="hero-disc"><div class="disc-center"><img class="hero-logo" src="assets/logo.png" alt="NAKRI x OG logo"></div></div>
+        <div class="floating-tag tag-top">NAKRI <b>×</b> OG</div>
+        <div class="floating-tag tag-bottom"><span class="equalizer"><i></i><i></i><i></i><i></i></span> SOUND ON</div>
+      </div>
+    </section>
+
+    <section id="library" class="library">
+      <div class="section-heading"><div><div class="eyebrow"><span></span> THE COLLECTION</div><h2>Music <em>library</em></h2></div><div class="track-count" id="trackCount">0 TRACKS</div></div>
+      <div class="toolbar"><label class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="Search songs or artists..." autocomplete="off"></label><select id="sortSelect" aria-label="Sort songs"><option value="name">Title A–Z</option><option value="newest">Newest first*</option></select></div>
+      <div id="songGrid" class="song-grid"></div>
+      <div id="emptyState" class="empty-state" hidden><div class="empty-icon">♫</div><h3>No tracks found</h3><p>Try another search, or add songs to the <code>songs</code> folder.</p></div>
+      <p class="library-note">*“Newest first” uses the order in <code>songs.json</code>. Add new tracks near the top of that file.</p>
+    </section>
+    <section class="about"><div class="about-symbol"><img class="about-logo" src="assets/logo.png" alt="NAKRI x OG logo"></div><div><div class="eyebrow">MADE : NAKRIx6</div><h2>One space.<br><em>Every feeling.</em></h2></div><p>Put your headphones on and enjoy the music. This website is built for listening — only the site owner manages the song collection.</p></section>
+  </main>
+
+  <footer><a class="footer-brand" href="#">NAKRI <i>x</i> OG</a><span>FACEBOOK : Krisz</span><span id="year"></span></footer>
+
+  <div class="player" id="player" aria-label="Music player">
+    <div class="now-playing"><div class="mini-cover" id="miniCover"><span>♫</span></div><div class="now-text"><strong id="nowTitle">Choose a track</strong><span id="nowArtist">NAKRI x OG</span></div></div>
+    <div class="player-controls"><div class="control-buttons"><button id="prevBtn" aria-label="Previous song">|‹</button><button id="playBtn" class="play-button" aria-label="Play">▶</button><button id="nextBtn" aria-label="Next song">›|</button></div><div class="timeline"><span id="currentTime">0:00</span><input id="seekBar" type="range" min="0" max="1000" value="0" aria-label="Seek song"><span id="duration">0:00</span></div></div>
+    <div class="volume-wrap"><span>VOL</span><input id="volumeBar" type="range" min="0" max="1" step="0.01" value="0.8" aria-label="Volume"></div>
+    <audio id="audio" preload="metadata"></audio>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
